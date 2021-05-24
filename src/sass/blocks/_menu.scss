@@ -7,7 +7,7 @@
     height: 57.292vw;
     background-color: #242424;
     background-image: linear-gradient(to bottom, rgba(255, 79, 0, 0) 0%, #ff4f00 2000%);
-    transition: all .5s;
+    transition: all .3s;
     &__items {
         height: 100%;
         width: 100%;
@@ -18,11 +18,21 @@
         align-items: center;
         list-style-type: none;
     }
-    &__link {
+    &__item {
         position: relative;
+        width: 100%;
+        height: 4.688vw;
+        overflow: hidden;
+    }
+    &__link {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(100%);
         color: #ffffff;
         text-decoration: none;
         font-size: 3.125vw;
+        letter-spacing: 0.500vw;
         text-transform: uppercase;
         font-weight: 700;
         transition: all .3s;
@@ -32,7 +42,7 @@
             height: 0.208vw;
             width: 0;
             left: 0;
-            bottom: -0.521vw;
+            bottom: 0;
             background-color: var(--main-color);
             transition: ease-in-out all .3s;
         }
@@ -45,6 +55,11 @@
     }
     &_active {
         top: 0;
+        .menu {
+            &__link {
+                animation: menuLinks .3s .3s 1 forwards ease-in-out;
+            }
+        }
     }
 }
 

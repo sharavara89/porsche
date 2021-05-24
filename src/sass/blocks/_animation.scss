@@ -1,0 +1,8 @@
+@keyframes menuLinks {
+    0% {
+        transform: translateX(-50%) translateY(100%);
+    }
+    100% {
+        transform: translateX(-50%) translateY(-50%);
+    }
+}
