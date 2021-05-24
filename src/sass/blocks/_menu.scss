@@ -6,7 +6,7 @@
     width: 87.500vw;
     height: 57.292vw;
     background-color: #242424;
-    background-image: linear-gradient(to bottom, rgba(255, 79, 0, 0) 0%, #ff4f00 1000%);
+    background-image: linear-gradient(to bottom, rgba(255, 79, 0, 0) 0%, #ff4f00 2000%);
     transition: all .5s;
     &__items {
         height: 100%;
@@ -142,11 +142,6 @@
                     stroke-dashoffset: 300;
                 }
             }
-        }
-    }
-    &:hover {
-        svg {
-            stroke: #ffffff;
         }
     }
 }
