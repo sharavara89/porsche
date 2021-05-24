@@ -1,0 +1,45 @@
+
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/font';
+@import 'libs/slick';
+
+@import 'base/vars';
+
+* {
+    font-family: 'Gilroy';
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url('../img/main_bg.svg') center (center / cover) no-repeat;
+}
+
+p, ol, ul, li, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+.container {
+    position: relative;
+    padding-top: 57.292%;
+    margin: 21.35415vw 6.250vw;
+    background: url('../img/container_bg.png') center (center / cover) no-repeat;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 3.125vw;
+        left: 2.08335vw;
+        right: 2.08335vw;
+        bottom: 0;
+        box-shadow: 0 2.604vw 6.250vw #000000;
+        z-index: -1;
+    }
+}
+
+@import 'blocks/logo';
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/singer';
+
+@import 'blocks/media';
